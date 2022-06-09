@@ -18,11 +18,12 @@
             </tr>
             <tr>
                 <th>Name</th>
-                <td th:text="${#strings.toUpperCase(job.name)}"></td>
+<!--                <td th:text="${#strings.toUpperCase(job.name)}"></td>-->
+                <td th:text="${job.name}"></td>
             </tr>
             <tr>
                 <th>Employer</th>
-                <td><a  th:text="${job.employer}" th:href="@{/list/jobs(column=employer,value=${job.employer})}"></a></td>
+                <td><a th:text="${job.employer}" th:href="@{/list/jobs(column=employer,value=${job.employer})}"></a></td>
             </tr>
             <tr>
                 <th>Location</th>
